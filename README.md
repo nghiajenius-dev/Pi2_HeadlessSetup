@@ -34,7 +34,7 @@ Now, before writing Raspbian image to your SD Card, we need to locate your image
 - Open **Terminal** Application, run:
 ```diskutil list```
 - You will recognize you SD Card by its name and capacity. In my case it is ```disk2```
-- Now run dis command to start writing your linux image to SD Card, **be careful** with the details if you don't want to wipe out a wrong disk.
+- Now run this command in Terminal to start writing your linux image to SD Card, **be careful** with the details if you don't want to wipe out a wrong disk.
 ```bash
  sudo dd bs=1m if=image.img of=/dev/rdisk<disk# from diskutil>
 ```
